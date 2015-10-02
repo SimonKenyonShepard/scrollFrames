@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>scrollFrames</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <script type="application/javascript" src="js/libs/jquery.min.js"></script>
+        <script type="application/javascript" src="js/scrollFrames.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+        <style>
+
+            html,
+            body {
+                overflow: hidden;
+                width: 100%;
+            }
+
+            #content {
+
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                overflow: scroll;
+
+            }
+
+            p {
+                width: 100%;
+            }
+
+            .firstImage {
+                animation-name : fadeInLeft;
+                border: 3px solid red;
+                width : 100%;
+            }
+
+            .secondImage {
+                animation-name : fadeInRight;
+                border: 3px solid blue;
+                width : 100%;
+            }
+
+            .thirdImage {
+                animation-name : fadeIn;
+                border: 3px solid green;
+                width : 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="content">
+          <h1>Scroll Frames test</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec auctor elit, at venenatis diam. Sed mattis nisl vel sagittis viverra. Etiam id nisl vulputate, iaculis ligula at, pretium ex. Curabitur metus libero, tincidunt sed interdum fermentum, rutrum id nisl. Praesent sit amet pulvinar diam. In tempor dolor sit amet posuere ultricies. Phasellus vestibulum, dui a iaculis placerat, lectus ligula dapibus erat, sit amet viverra mauris augue egestas sem. Curabitur convallis nulla non augue convallis pulvinar. Maecenas tincidunt, purus sit amet porttitor fringilla, elit erat venenatis arcu, a interdum est velit ut nisl. Pellentesque eget odio fringilla lectus placerat tempus id a augue. Ut id quam venenatis enim aliquet efficitur. Mauris in nisl nec urna convallis cursus. Sed laoreet blandit sem sit amet pretium. Fusce vel ultricies leo. Aenean at tortor eget turpis convallis elementum.</p>
+          <img src="imgs/img1.jpg" class="firstImage" />
+          <p>Sed id malesuada magna, eget facilisis sem. Sed non fermentum quam. In vestibulum tempus velit sit amet posuere. Donec tempus bibendum blandit. Proin dignissim viverra ornare. Quisque elementum, metus fringilla finibus iaculis, dui odio venenatis velit, in maximus neque libero vitae ex. Nulla purus mauris, luctus ac scelerisque non, suscipit nec velit. Duis dapibus fermentum dolor, vel lacinia dui vulputate id. In nisi ligula, auctor non felis sit amet, euismod eleifend sapien. Curabitur ultricies imperdiet sagittis. Curabitur et fringilla dolor. Suspendisse quis mi eu arcu fermentum tincidunt. Duis dignissim velit ante, eu tristique velit tincidunt sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc non tellus non metus condimentum pretium.</p>
+          <img src="imgs/img2.jpg" class="secondImage" />
+          <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo mauris metus, eget vulputate tortor ullamcorper nec. Nunc feugiat ultrices sem, a blandit massa ullamcorper a. Pellentesque suscipit lorem mi, eu congue odio sollicitudin et. Donec sagittis, quam ut faucibus vulputate, neque augue aliquam mi, sed dictum orci ex ac erat. Ut at lacus leo. In dapibus tempor euismod. Mauris elementum lorem id elit dapibus commodo. Integer sed eros rhoncus orci imperdiet pharetra.</p>
+          <img src="imgs/img3.jpg" class="thirdImage" />
+          <p>Donec venenatis elit non mi elementum, in ullamcorper odio accumsan. Phasellus ut laoreet orci, vel gravida velit. Pellentesque elementum felis enim, ac vestibulum mauris vehicula in. Praesent ultrices ipsum ac risus tempus, eget faucibus diam fermentum. Suspendisse felis est, vehicula vitae dui eget, pharetra luctus nulla. Nulla pretium tempor euismod. Pellentesque malesuada magna sem. Donec mattis dui in ex mollis congue. Aliquam erat volutpat. Nunc et varius nibh, eget sollicitudin tortor. Maecenas neque neque, luctus nec nisl sed, condimentum dapibus nibh. Morbi vitae magna vitae augue lobortis suscipit. Praesent mattis sit amet purus a auctor. Ut ut ex a est semper facilisis.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec auctor elit, at venenatis diam. Sed mattis nisl vel sagittis viverra. Etiam id nisl vulputate, iaculis ligula at, pretium ex. Curabitur metus libero, tincidunt sed interdum fermentum, rutrum id nisl. Praesent sit amet pulvinar diam. In tempor dolor sit amet posuere ultricies. Phasellus vestibulum, dui a iaculis placerat, lectus ligula dapibus erat, sit amet viverra mauris augue egestas sem. Curabitur convallis nulla non augue convallis pulvinar. Maecenas tincidunt, purus sit amet porttitor fringilla, elit erat venenatis arcu, a interdum est velit ut nisl. Pellentesque eget odio fringilla lectus placerat tempus id a augue. Ut id quam venenatis enim aliquet efficitur. Mauris in nisl nec urna convallis cursus. Sed laoreet blandit sem sit amet pretium. Fusce vel ultricies leo. Aenean at tortor eget turpis convallis elementum.</p>
+          <img src="imgs/img1.jpg" class="firstImage" />
+          <p>Sed id malesuada magna, eget facilisis sem. Sed non fermentum quam. In vestibulum tempus velit sit amet posuere. Donec tempus bibendum blandit. Proin dignissim viverra ornare. Quisque elementum, metus fringilla finibus iaculis, dui odio venenatis velit, in maximus neque libero vitae ex. Nulla purus mauris, luctus ac scelerisque non, suscipit nec velit. Duis dapibus fermentum dolor, vel lacinia dui vulputate id. In nisi ligula, auctor non felis sit amet, euismod eleifend sapien. Curabitur ultricies imperdiet sagittis. Curabitur et fringilla dolor. Suspendisse quis mi eu arcu fermentum tincidunt. Duis dignissim velit ante, eu tristique velit tincidunt sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc non tellus non metus condimentum pretium.</p>
+          <img src="imgs/img2.jpg" class="secondImage" />
+          <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo mauris metus, eget vulputate tortor ullamcorper nec. Nunc feugiat ultrices sem, a blandit massa ullamcorper a. Pellentesque suscipit lorem mi, eu congue odio sollicitudin et. Donec sagittis, quam ut faucibus vulputate, neque augue aliquam mi, sed dictum orci ex ac erat. Ut at lacus leo. In dapibus tempor euismod. Mauris elementum lorem id elit dapibus commodo. Integer sed eros rhoncus orci imperdiet pharetra.</p>
+          <img src="imgs/img3.jpg" class="thirdImage" />
+          <p>Donec venenatis elit non mi elementum, in ullamcorper odio accumsan. Phasellus ut laoreet orci, vel gravida velit. Pellentesque elementum felis enim, ac vestibulum mauris vehicula in. Praesent ultrices ipsum ac risus tempus, eget faucibus diam fermentum. Suspendisse felis est, vehicula vitae dui eget, pharetra luctus nulla. Nulla pretium tempor euismod. Pellentesque malesuada magna sem. Donec mattis dui in ex mollis congue. Aliquam erat volutpat. Nunc et varius nibh, eget sollicitudin tortor. Maecenas neque neque, luctus nec nisl sed, condimentum dapibus nibh. Morbi vitae magna vitae augue lobortis suscipit. Praesent mattis sit amet purus a auctor. Ut ut ex a est semper facilisis.</p>
+      </div>
+      <script type="application/javascript">
+
+          var mainContent = document.getElementById("content"); 
+          var scrollFrame = new scrollFrames("css/scrollFrames.css");
+          //wait some random time for content to load until you are ready to apply
+          setTimeout(function() {
+            scrollFrame.applyScrollFrameAnimations(mainContent);
+          }, 400);
+          
+
+      </script>
+       
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "scrollframes",
+  "version": "0.0.1",
+  "description": "a library able to specify animations on elements in CSS using the animation syntax but binding those animations to the element dependent on it's scroll position",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonKenyonShepard/scrollFrames.git"
+  },
+  "author": "Simon Kenyon Shepard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonKenyonShepard/scrollFrames/issues"
+  },
+  "homepage": "https://github.com/SimonKenyonShepard/scrollFrames",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
+}
