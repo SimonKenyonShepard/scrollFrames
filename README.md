@@ -2,6 +2,7 @@
 Is a javascript shim designed to reuse existing css standards to create a clean way to make scrolling websites
 
 [Demo] (http://simonkenyonshepard.github.io/scrollFrames/)
+(view in mobile browser or chrome dev tools mobile simulator on)
 
 ## What are scrollFrames?
 
