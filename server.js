@@ -14,7 +14,7 @@ app.get('*', function(req, res, next) {
 });
 
 app.on('render:index', function(encoding, req, res) {
-  var template = 'example.html';
+  var template = 'index.html';
   fs.readFile(template, encoding, function(err, html) {
     res.contentType('text/html');
     res.send(200, html);
