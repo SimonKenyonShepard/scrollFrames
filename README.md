@@ -34,7 +34,7 @@ When the animatedObject class is added to an element, as well as other things it
 
 ## Taking it a step further
 
-A common use case on the internet today is to creating 'scrolling websites', these websites esentially turn the scrollbar into the timeline control of various animation elements, so when you scroll to a certain point, say 250px down the screen, the website responds by positioning various different elements on the screen in specific places. There are other libraries that offer generic ways to do this but none of them reuse any existing syntax pefering to create custom attributes per element to control the animations. With scrollframes the goal was to be able to specify using a CSS property which type of animation should apply when the element scrolls into view and when it leaves. This way you don't have to add custom attributes or specify per element how it should animate you can do so using normal CSS.
+A common use case on the internet today is to creating 'scrolling websites', these websites esentially turn the scrollbar into the timeline control of various animation elements, so when you scroll to a certain point, say 250px down the screen, the website responds by positioning various different elements on the screen in specific places. There are other libraries that offer generic ways to do this but none of them reuse any existing syntax prefering to create custom attributes per element to control the animations. With scrollframes the goal was to be able to specify using a CSS property which type of animation should apply when the element scrolls into view and when it leaves. This way you don't have to add custom attributes or specify per element how it should animate you can do so using normal CSS.
 Take the example below :
 
 ```
@@ -80,6 +80,8 @@ Route your browser to http://localhost:8765/ to see the example.
 
 
 *This only works on webkit browsers, at somepoint I will change this.
+
+*Currently only works on touch events, again I will fix this to incorporate scroll at some stage, this is a mobile first demo. If you want to see on desktop try using chrome developer tools with mobile simulation turned on.
 
 *The positioning of your scrollFrame elements matters, the container you specify has to be the thing getting scrolled.
 
