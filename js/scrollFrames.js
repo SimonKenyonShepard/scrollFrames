@@ -68,6 +68,7 @@ var scrollFrames = function(scrollFramesCSS) {
 		scrollElements = getElementsScrollFrames(scrollElements);
 		getNodeFrames(scrollElements);
 		applyScrollEventsToContainer(container);
+		console.log(scrollElements, scrollFrameDeclarations);
 		setupInitialElementState(scrollElements);
 
 	};
@@ -84,7 +85,9 @@ var scrollFrames = function(scrollFramesCSS) {
 			property_value = property_value ? property_value.split(" ") : [];
 			for(var i = 0; i < property_value.length; i++) {
 				for(var scrollFrameAnimation in scrollFrameDeclarations) {
+					console.log(node, property_value[i]);
 					if(property_value[i] === scrollFrameAnimation) {
+
 						return {
 							node : node,
 							scrollAnimation : property_value[i]
