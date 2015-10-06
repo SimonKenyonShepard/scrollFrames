@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SimonKenyonShepard/scrollFrames",
   "devDependencies": {
+    "dev-ip": "^1.0.1",
     "express": "^4.13.3"
   }
 }
